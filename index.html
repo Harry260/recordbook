@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RecordBook</title>
+		<link
+			rel="shortcut icon"
+			href="./src/assets/images/fav.svg"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="./dist/main.css" type="text/css" />
+	</head>
+	<body class="center us">
+		<!-- <button class="btn-sign-out">SignOut</button> -->
+		<div class="header center">
+			<div class="header-inner center">
+				<div class="logo-section center">
+					<img src="./src/assets/images/fav.svg" alt="" />
+					<h1>Calculator</h1>
+				</div>
+			</div>
+		</div>
+		<div class="app-root v-center">
+			<div class="app-wrap v-center">
+				<div class="app-main">
+					<div class="center add-to-calc">
+						<div>
+							<img src="./src/assets/icons/newbook.png" alt="" />
+							<h1>Add items First!</h1>
+							<span
+								>Add items from the list, and then choose you
+								ICR to calculate insulin!</span
+							>
+						</div>
+					</div>
+					<div class="main-bar sbtw-center">
+						<div class="center">
+							<div class="bar-btn input-wrap center ratio-btn">
+								<img src="./src/assets/icons/note.png" />
+								<span class="ratio-label">1:10</span>
+								<div class="ratio-pop-up"></div>
+							</div>
+							<div class="bar-btn input-wrap center">
+								<img src="./src/assets/icons/water.png" />
+								<span class="insulin-count">5 Units</span>
+							</div>
+						</div>
+						<div class="bar-btn save-record-open input-wrap center">
+							<img src="./src/assets/icons/ok.png" />
+							<span>Save</span>
+						</div>
+					</div>
+					<div class="active-item-list">
+						<div class="item-list"></div>
+					</div>
+				</div>
+				<div class="food-items-pop">
+					<div class="food-items-pop-header">
+						<!-- <h1>Food Items</h1> -->
+						<div class="input-wrap food-item-search">
+							<input
+								type="text"
+								class="food-list-search-input"
+								placeholder="Search"
+							/>
+						</div>
+					</div>
+					<div class="food-list"></div>
+					<div class="food-quantity-choose center">
+						<div class="food-quantity-inner">
+							<div class="food-quantity-label">Quantity</div>
+							<input
+								type="number"
+								value="100"
+								placeholder="100"
+								class="food-quantity-input"
+							/>
+							<input
+								type="range"
+								class="choose-range"
+								min="1"
+								max="700"
+							/>
+							<div class="button add-item-btn">
+								<span>Add this item</span>
+							</div>
+							<div class="button btn-fade cancel-quantity-btn">
+								<span>Cancel</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay center ratio-pop-overlay">
+			<div class="create-ratio-pop">
+				<h1>Create Ratio</h1>
+				<span class="sub"
+					>Create your custom ratio for your calculation!</span
+				>
+
+				<div class="input-wrap">
+					<input
+						type="text"
+						class="ratio-name-in"
+						placeholder="Name. Eg. Dinner Ratio"
+					/>
+				</div>
+				<div class="input-wrap">
+					<input
+						type="number"
+						class="ratio-in"
+						placeholder="Ratio eg. 12"
+					/>
+				</div>
+				<div class="button save-ratio-btn">
+					<span>Save ratio</span>
+				</div>
+				<div class="button btn-fade ratio-cancel-btn">
+					<span>Cancel</span>
+				</div>
+			</div>
+		</div>
+		<div class="overlay center save-record-overlay">
+			<div class="save-record-pop">
+				<header class="save-record-header">
+					<h1>Save Record</h1>
+					<span class="sub"
+						>Save your record to view, share or download anytime!
+						Type info and press save!
+					</span>
+				</header>
+				<main>
+					<div class="input-wrap">
+						<input
+							type="text"
+							placeholder="Title"
+							class="record-save-title"
+						/>
+					</div>
+					<div class="input-wrap">
+						<input
+							type="number"
+							placeholder="Blood Sugar"
+							class="record-save-blood"
+						/>
+					</div>
+					<div class="input-wrap">
+						<input
+							type="number"
+							placeholder="Insulin"
+							class="record-save-insulin"
+						/>
+					</div>
+					<div class="input-wrap">
+						<input type="datetime-local" class="record-save-date" />
+					</div>
+					<div class="button record-save-btn">
+						<span>Save record!</span>
+					</div>
+					<div class="button btn-fade record-cancel-btn">
+						<span>Discard</span>
+					</div>
+				</main>
+			</div>
+		</div>
+	</body>
+
+	<script src="./dist/main.js"></script>
+</html>

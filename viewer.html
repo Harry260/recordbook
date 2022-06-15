@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RecordBook</title>
+		<link
+			rel="shortcut icon"
+			href="./src/assets/images/fav.svg"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="./dist/main.css" type="text/css" />
+	</head>
+	<body class="center">
+		<div class="date-choose-wrap">
+			<div class="ch-header blur">
+				<div class="logo-section center">
+					<img src="./src/assets/images/fav.svg" alt="" />
+					<h1>Choose Date</h1>
+				</div>
+				<div class="date-search input-wrap">
+					<input type="text" placeholder="Search for dates" />
+				</div>
+			</div>
+			<div class="date-list"></div>
+		</div>
+		<div class="overlay record-overlay center">
+			<img src="./src/assets/images/loading.svg" class="loader-icon" />
+			<div class="record-lane visible-false">
+				<div
+					class="logo-section v-center sbtw-center record-head record-head-def blur"
+				>
+					<div class="v-center">
+						<div class="nav-btn center close-record">
+							<i class="bi bi-arrow-left"></i>
+						</div>
+						<img src="./src/assets/images/fav.svg" />
+						<h1 class="rd">Record</h1>
+					</div>
+					<div>
+						<img
+							class="user-icon-viewer"
+							src="https://avatars.dicebear.com/api/initials/seed.svg"
+						/>
+					</div>
+				</div>
+
+				<div class="record-list">
+					<div class="chart-wrap">
+						<canvas id="weeklyHistory"></canvas>
+					</div>
+					<div class="record-list-root"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="overlay full-loader center">
+			<img src="./src/assets/images/loading.svg" alt="" />
+		</div>
+	</body>
+	<script src="./dist/viewer.js"></script>
+</html>

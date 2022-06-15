@@ -1,0 +1,158 @@
+[
+   {
+      "ch_gram": 22.5,
+      "name": "appam",
+      "unit": "count",
+      "pic": "https://hips.hearstapps.com/vidthumb/images/delish-u-rice-2-1529079587.jpg?crop=1.00xw:0.893xh;0,0.0580xh&resize=1200:*"
+   },
+   {
+      "ch_gram": 15,
+      "name": "dosa",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 7.5,
+      "name": "idli",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 0.15,
+      "name": "sambar",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.15,
+      "name": "greenpece",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.1875,
+      "name": "rice",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.1,
+      "name": "beef curry",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.258,
+      "name": "cashew nut",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 30,
+      "name": "banana",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 2.14,
+      "name": "50 50 biscut",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 2.14,
+      "name": "fifty fifty biscut",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 3.75,
+      "name": "arrow root biscut",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 15,
+      "name": "apple",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 4.95,
+      "name": "good day biscut",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 0.262,
+      "name": "chicken biriyani",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 3.75,
+      "name": "ullivada",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 0.225,
+      "name": "uppuma",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.15,
+      "name": "puttu",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.05,
+      "name": "chutney",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.1,
+      "name": "vegitable curry",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.1,
+      "name": "chicken curry",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.08,
+      "name": "thoran",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 25,
+      "name": "ghee roast",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 20,
+      "name": "vada",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 0.15,
+      "name": "kadalla kari",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 35,
+      "name": "porotta",
+      "unit": "count"
+   },
+   {
+      "ch_gram": 0.05,
+      "name": "mushroom curry",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.1,
+      "name": "paneer curry",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.075,
+      "name": "popcorn",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 0.1,
+      "name": "ragi puttu",
+      "unit": "ml"
+   },
+   {
+      "ch_gram": 15,
+      "name": "chapati",
+      "unit": "count"
+   }
+]
