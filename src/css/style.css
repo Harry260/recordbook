@@ -122,8 +122,8 @@ a {
 .food-items-pop-header {
 	position: absolute;
 	width: 100%;
-	padding: 10px;
-	top: 0;
+	padding: 10px 20px;
+	top: -3px;
 	background-color: inherit;
 	backdrop-filter: blur(20px);
 	z-index: 1;
@@ -368,7 +368,7 @@ input[type="range"]::-moz-range-thumb {
 
 .add-to-calc span {
 	font-size: 12px;
-	color: var(--hairline-highlight);
+	color: var(--secondary-color);
 	text-align: center;
 	width: 250px;
 	display: block;
@@ -376,13 +376,14 @@ input[type="range"]::-moz-range-thumb {
 	margin-top: 10px;
 }
 
+.add-to-calc img {
+	width: 256px;
+}
+
 .ratio-btn:hover .ratio-pop-up {
 	display: block;
 }
-.ratio-btn:hover {
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-}
+
 .food-item-label {
 	font-size: 12px;
 }
@@ -390,7 +391,7 @@ input[type="range"]::-moz-range-thumb {
 .ratio-pop-up {
 	position: absolute;
 	background-color: var(--secondary-back);
-	top: 40px;
+	top: 45px;
 	left: 20px;
 	overflow-x: hidden;
 	max-height: 200px;
@@ -398,7 +399,6 @@ input[type="range"]::-moz-range-thumb {
 	border-radius: 10px;
 	border: 1px solid var(--hairline);
 	display: none;
-	border-top-left-radius: 0;
 }
 
 .ratio-item:hover {
@@ -471,7 +471,9 @@ input[type="range"]::-moz-range-thumb {
 	border-radius: 30px;
 	width: 400px;
 }
-
+.save-record-open {
+	margin: 0;
+}
 .save-record-header h1 {
 	font-size: 20px;
 	text-align: center;
@@ -654,4 +656,21 @@ input[type="range"]::-moz-range-thumb {
 .full-loader img {
 	width: 50px;
 	height: 50px;
+}
+
+.mobile-add-btn {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	display: none !important;
+}
+
+.mobile-add-btn .button {
+	width: 100%;
+}
+
+.button-close-food-pop {
+	background-color: var(--primary-back);
 }

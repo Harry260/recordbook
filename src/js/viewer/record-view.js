@@ -41,11 +41,11 @@ async function getRecordForDate(date) {
                </div>
                <div class="info-wrap v-center">
                   <div class="info-item v-center visible-${bloodSugar}">
-                     <img src="./src/assets/icons/pulse.png" />
+                     <img src="./src/assets/icons/pulse.png" alt="Image"/>
                      <span>${bloodSugar}</span>
                   </div>
                   <div class="info-item v-center visible-${bloodSugar}">
-                     <img src="./src/assets/icons/water.png" />
+                     <img src="./src/assets/icons/water.png" alt="Image"/>
                      <span>${insulin} Units</span>
                   </div>
                </div>
@@ -125,6 +125,7 @@ async function getDateList() {
 			<div class="date-item sbtw-center v-center" data-date="${key}">
 			<div class="v-center name-icon-gp">
 				<img
+				alt="Image"
 					src="https://avatars.dicebear.com/api/initials/${moment(key).format("D")}.svg"
 				/>
 				<div class="date-title">${txtDate}</div>

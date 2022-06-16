@@ -21,6 +21,9 @@ const components = {
 		itemList: $(".item-list"),
 		noItemNotice: $(".add-to-calc"),
 		insulinCount: $(".insulin-count"),
+		addMobileFood: $(".add-mob-food"),
+		foodListPopup: $(".food-items-pop"),
+		foodListPopupClose: $(".button-close-food-pop"),
 	},
 	ratio: {
 		ratioBtn: $(".ratio-btn"),

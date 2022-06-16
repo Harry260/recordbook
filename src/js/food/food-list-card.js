@@ -5,7 +5,8 @@ function getFoodListCard(foodItemList) {
       <div class="food-info v-center">
          <img
             class="cancel-food"
-            src="./src/assets/icons/cancel.png"
+            src="./src/assets/icons/cancel.png",
+            alt="Image"
          />
          <img
             class="item-icon"

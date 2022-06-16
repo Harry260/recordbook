@@ -23,7 +23,12 @@ const foodList = {
 		var html = getFoodListCard(foodItemList);
 
 		var insulin = calculateInsulin(Ratio.getCurrentRatio());
-		foodListComponents.insulinCount.text(insulin + " units");
+		if (insulin === false) {
+			foodListComponents.insulinCount.text("Error");
+		} else {
+			console.log(insulin);
+			foodListComponents.insulinCount.text(insulin + " units");
+		}
 		foodListComponents.itemList.html(html);
 	},
 	getList: async () => {
@@ -49,7 +54,7 @@ const foodList = {
 			<div class="item-icon">
 				<img
 					src="https://avatars.dicebear.com/api/initials/${item.name}.svg"
-					alt=""
+					alt="Image"
 				/>
 			</div>
 			<div class="item-name">
@@ -121,6 +126,13 @@ foodListComponents.quantitySlider.on("change", function () {
 	foodListComponents.quantityInput.val(value);
 });
 
+foodListComponents.addMobileFood.on("click", function () {
+	foodListComponents.foodListPopup.show();
+});
+
+foodListComponents.foodListPopupClose.on("click", function () {
+	foodListComponents.foodListPopup.hide();
+});
 foodListComponents.addItemsBtn.on("click", function () {
 	var quantity = foodListComponents.quantityInput.val();
 	var { title, gram, unit } = window.active_items;

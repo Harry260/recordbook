@@ -1,2 +1,104 @@
-@media (max-width: 900px) {
+@media (max-width: 720px) {
+	.food-items-pop {
+		display: none;
+		position: fixed;
+		height: 90vh;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		z-index: 99;
+		width: 100% !important;
+		max-width: 100%;
+	}
+
+	.app-wrap,
+	.app-root,
+	.app-main {
+		margin: 0;
+		width: 100%;
+		padding: 10px;
+	}
+
+	/* .add-to-calc {
+		display: none !important;
+	} */
+
+	.save-record-open span {
+		display: none !important;
+	}
+
+	.save-record-open img {
+		margin: 0;
+	}
+
+	.save-record-open {
+		padding: 10px;
+	}
+
+	.mobile-add-btn {
+		display: flex !important;
+	}
+
+	.food-list {
+		height: 100%;
+		padding-bottom: 100px;
+	}
+
+	.app-main {
+		height: 80vh;
+	}
+
+	.date-choose-wrap {
+		width: 80%;
+	}
+
+	.date-list {
+		width: 100%;
+	}
+	.record-lane,
+	.record-item,
+	.record-list {
+		width: 100% !important;
+	}
+
+	.record-head {
+		left: 0;
+		top: 0;
+		border-radius: 0;
+		margin: 0;
+	}
+
+	.record-title {
+		font-size: 15px;
+	}
+
+	.ratio-tag {
+		font-size: 10px;
+	}
+	.food-info img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+}
+@media (max-width: 400px) {
+	.save-record-pop,
+	.create-ratio-pop {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.app-wrap,
+	.app-root,
+	.app-main {
+		padding: 5px;
+	}
 }

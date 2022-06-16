@@ -2,21 +2,53 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>RecordBook</title>
+		<meta name="theme-color" content="#111" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- Primary Meta Tags -->
+		<title>Record Book</title>
+		<meta name="title" content="Record Book" />
+		<meta
+			name="description"
+			content="Calculate and save your food records, easily! (made for diabetes patients)"
+		/>
 		<link
 			rel="shortcut icon"
 			href="./src/assets/images/fav.svg"
 			type="image/x-icon"
 		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://recordbook.vercel.app" />
+		<meta property="og:title" content="Record Book" />
+		<meta
+			property="og:description"
+			content="Calculate and save your food records, easily! (made for diabetes patients)"
+		/>
+		<meta property="og:image" content="./src/assets/images/fav.svg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:url" content="https://recordbook.vercel.app" />
+		<meta property="twitter:title" content="Record Book" />
+		<meta
+			property="twitter:description"
+			content="Calculate and save your food records, easily! (made for diabetes patients)"
+		/>
+		<meta property="twitter:image" content="./src/assets/images/fav.svg" />
+
 		<link rel="stylesheet" href="./dist/main.css" type="text/css" />
 	</head>
 	<body class="center">
 		<div class="date-choose-wrap">
 			<div class="ch-header blur">
 				<div class="logo-section center">
-					<img src="./src/assets/images/fav.svg" alt="" />
+					<img
+						src="./src/assets/images/fav.svg"
+						width=""
+						height=""
+						alt="Image"
+					/>
 					<h1>Choose Date</h1>
 				</div>
 				<div class="date-search input-wrap">
@@ -26,7 +58,13 @@
 			<div class="date-list"></div>
 		</div>
 		<div class="overlay record-overlay center">
-			<img src="./src/assets/images/loading.svg" class="loader-icon" />
+			<img
+				src="./src/assets/images/loading.svg"
+				class="loader-icon"
+				width=""
+				height=""
+				alt="Image"
+			/>
 			<div class="record-lane visible-false">
 				<div
 					class="logo-section v-center sbtw-center record-head record-head-def blur"
@@ -35,13 +73,21 @@
 						<div class="nav-btn center close-record">
 							<i class="bi bi-arrow-left"></i>
 						</div>
-						<img src="./src/assets/images/fav.svg" />
+						<img
+							src="./src/assets/images/fav.svg"
+							width=""
+							height=""
+							alt="Img"
+						/>
 						<h1 class="rd">Record</h1>
 					</div>
 					<div>
 						<img
 							class="user-icon-viewer"
 							src="https://avatars.dicebear.com/api/initials/seed.svg"
+							width=""
+							height=""
+							alt="Img"
 						/>
 					</div>
 				</div>
@@ -56,7 +102,12 @@
 		</div>
 
 		<div class="overlay full-loader center">
-			<img src="./src/assets/images/loading.svg" alt="" />
+			<img
+				src="./src/assets/images/loading.svg"
+				width=""
+				height=""
+				alt="Image"
+			/>
 		</div>
 	</body>
 	<script src="./dist/viewer.js"></script>

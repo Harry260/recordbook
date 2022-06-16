@@ -20,8 +20,9 @@ A simple android app to record your food timeline for diabetes patients. It can 
 -   [x] Save Record
 -   [x] View Record
 -   [x] Insulin-BloodSugar graph
+-   [x] Responsive
+-   [x] Chrome Lighthouse audit 95+ (all)
 -   [ ] Share Record
 -   [ ] Custom food items
 -   [ ] Add extra correction units
--   [ ] Responsive
--   [ ] Native apps
+-   [ ] PWA

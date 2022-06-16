@@ -2,14 +2,41 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>RecordBook</title>
+		<meta name="theme-color" content="#111" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- Primary Meta Tags -->
+		<title>Record Book</title>
+		<meta name="title" content="Record Book" />
+		<meta
+			name="description"
+			content="Calculate and save your food records, easily! (made for diabetes patients)"
+		/>
 		<link
 			rel="shortcut icon"
 			href="./src/assets/images/fav.svg"
 			type="image/x-icon"
 		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://recordbook.vercel.app" />
+		<meta property="og:title" content="Record Book" />
+		<meta
+			property="og:description"
+			content="Calculate and save your food records, easily! (made for diabetes patients)"
+		/>
+		<meta property="og:image" content="./src/assets/images/fav.svg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:url" content="https://recordbook.vercel.app" />
+		<meta property="twitter:title" content="Record Book" />
+		<meta
+			property="twitter:description"
+			content="Calculate and save your food records, easily! (made for diabetes patients)"
+		/>
+		<meta property="twitter:image" content="./src/assets/images/fav.svg" />
+
 		<link rel="stylesheet" href="./dist/main.css" type="text/css" />
 	</head>
 	<body class="center us">
@@ -17,7 +44,12 @@
 		<div class="header center">
 			<div class="header-inner center">
 				<div class="logo-section center">
-					<img src="./src/assets/images/fav.svg" alt="" />
+					<img
+						src="./src/assets/images/fav.svg"
+						width=""
+						height=""
+						alt="Image"
+					/>
 					<h1>Calculator</h1>
 				</div>
 			</div>
@@ -27,7 +59,12 @@
 				<div class="app-main">
 					<div class="center add-to-calc">
 						<div>
-							<img src="./src/assets/icons/newbook.png" alt="" />
+							<img
+								src="./src/assets/images/newbook.jpg"
+								width=""
+								height=""
+								alt="Image"
+							/>
 							<h1>Add items First!</h1>
 							<span
 								>Add items from the list, and then choose you
@@ -38,17 +75,32 @@
 					<div class="main-bar sbtw-center">
 						<div class="center">
 							<div class="bar-btn input-wrap center ratio-btn">
-								<img src="./src/assets/icons/note.png" />
+								<img
+									src="./src/assets/icons/note.png"
+									width=""
+									height=""
+									alt="Img"
+								/>
 								<span class="ratio-label">1:10</span>
 								<div class="ratio-pop-up"></div>
 							</div>
 							<div class="bar-btn input-wrap center">
-								<img src="./src/assets/icons/water.png" />
+								<img
+									src="./src/assets/icons/water.png"
+									width=""
+									height=""
+									alt="Img"
+								/>
 								<span class="insulin-count">5 Units</span>
 							</div>
 						</div>
 						<div class="bar-btn save-record-open input-wrap center">
-							<img src="./src/assets/icons/ok.png" />
+							<img
+								src="./src/assets/icons/ok.png"
+								width=""
+								height=""
+								alt="Img"
+							/>
 							<span>Save</span>
 						</div>
 					</div>
@@ -57,7 +109,12 @@
 					</div>
 				</div>
 				<div class="food-items-pop">
-					<div class="food-items-pop-header">
+					<div class="mobile-add-btn">
+						<div class="input-wrap button-close-food-pop">
+							<span>Done</span>
+						</div>
+					</div>
+					<div class="food-items-pop-header blur">
 						<!-- <h1>Food Items</h1> -->
 						<div class="input-wrap food-item-search">
 							<input
@@ -164,6 +221,17 @@
 						<span>Discard</span>
 					</div>
 				</main>
+			</div>
+		</div>
+		<div class="mobile-add-btn center">
+			<div class="bar-btn add-mob-food input-wrap center">
+				<img
+					src="./src/assets/icons/food.png"
+					width=""
+					height=""
+					alt="Img"
+				/>
+				<span>Add food item</span>
 			</div>
 		</div>
 	</body>
