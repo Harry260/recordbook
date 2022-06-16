@@ -1,0 +1,22 @@
+{
+   "name": "Record Book",
+   "short_name": "Record Book",
+   "start_url": ".",
+   "display": "standalone",
+   "background_color": "#111",
+   "description": "A food tracker and insulin calculator for people with diabetes.",
+   "icons": [
+      {
+         "src": "src/assets/icons/icon512.png",
+         "sizes": "1024x1024",
+         "type": "image/png"
+      },
+      {
+         "src": "src/assets/icons/icon256.png",
+         "sizes": "512x512",
+         "type": "image/png"
+      }
+   ],
+   "theme_color": "#111",
+   "orientation": "portrait"
+}

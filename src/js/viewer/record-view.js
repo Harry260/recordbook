@@ -106,7 +106,7 @@ async function getDateList() {
 
 		components.viewer.userIcon.attr(
 			"src",
-			`https://avatars.dicebear.com/api/big-smile/${user.data.displayName}.svg`
+			`https://avatars.dicebear.com/api/big-smile/${user.data.uid}.svg`
 		);
 		const starCountRef = ref(db, bucket);
 		onValue(starCountRef, (snapshot) => {

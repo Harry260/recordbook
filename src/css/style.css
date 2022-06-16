@@ -107,11 +107,8 @@ a {
 
 .food-items-pop {
 	background-color: var(--secondary-back);
-
 	border-radius: 15px;
 	margin-bottom: 20px;
-	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-		rgba(0, 0, 0, 0.05) 0px 5px 10px;
 	position: relative;
 	overflow: hidden;
 	max-width: 200px;
@@ -122,7 +119,7 @@ a {
 .food-items-pop-header {
 	position: absolute;
 	width: 100%;
-	padding: 10px 20px;
+	padding: 20px;
 	top: -3px;
 	background-color: inherit;
 	backdrop-filter: blur(20px);
@@ -139,6 +136,7 @@ a {
 .food-item-search {
 	border-radius: 10px;
 	border: 1px solid var(--hairline);
+	margin: 0 !important;
 }
 
 .food-list {
@@ -189,7 +187,7 @@ a {
 	width: 100%;
 	background-color: var(--secondary-back);
 	backdrop-filter: blur(5px);
-	z-index: 2;
+	z-index: 10;
 	border-radius: 10px;
 	border-top: 1px solid var(--hairline);
 }
@@ -308,7 +306,7 @@ input[type="range"]::-moz-range-thumb {
 	height: 100%;
 }
 .food-item {
-	padding: 10px 12px;
+	padding: 10px 20px;
 	border-radius: 10px;
 	cursor: pointer;
 }
@@ -353,7 +351,7 @@ input[type="range"]::-moz-range-thumb {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 99;
+	z-index: 8;
 	background-color: var(--primary-back);
 }
 
@@ -448,6 +446,7 @@ input[type="range"]::-moz-range-thumb {
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 99999;
 }
 
 .header-inner {
@@ -494,6 +493,10 @@ input[type="range"]::-moz-range-thumb {
 	height: 100vh;
 	overflow: scroll;
 	top: 0;
+}
+
+.date-choose-wrap::-webkit-scrollbar {
+	display: none;
 }
 
 .date-item img {
@@ -543,6 +546,7 @@ input[type="range"]::-moz-range-thumb {
 	padding: 5px;
 	padding-top: 20px;
 	z-index: 999;
+	background-color: var(--secondary-back);
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -627,6 +631,8 @@ input[type="range"]::-moz-range-thumb {
 	padding: 5px;
 	width: 40px;
 	margin-left: 5px;
+	margin-right: 10px;
+	border-radius: 50%;
 }
 
 .nav-btn:hover {
@@ -639,7 +645,7 @@ input[type="range"]::-moz-range-thumb {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background-color: var(--primary-back);
+	background-color: var(--secondary-back);
 	display: inline-block;
 	margin-right: 10px;
 }
@@ -665,6 +671,7 @@ input[type="range"]::-moz-range-thumb {
 	width: 100%;
 	padding: 20px;
 	display: none !important;
+	z-index: 9;
 }
 
 .mobile-add-btn .button {
@@ -673,4 +680,40 @@ input[type="range"]::-moz-range-thumb {
 
 .button-close-food-pop {
 	background-color: var(--primary-back);
+}
+
+.button-area {
+	position: relative;
+}
+.profile-pop {
+	display: none;
+	position: absolute;
+	background-color: var(--secondary-back);
+	border: 1px solid var(--hairline);
+	padding: 10px 0;
+	border-radius: 10px;
+	right: 0;
+	z-index: 9999999 !important;
+}
+.profile-pop ul li a {
+	color: var(--secondary-color);
+	width: 80%;
+	font-weight: 500;
+}
+.profile-pop ul li {
+	list-style-type: none;
+	padding: 5px 20px;
+	color: var(--secondary-color) !important;
+	font-weight: 500;
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+.profile-pop ul li:hover {
+	background-color: var(--hairline);
+	cursor: pointer;
+}
+
+.button-area:hover .profile-pop {
+	display: flex !important;
 }

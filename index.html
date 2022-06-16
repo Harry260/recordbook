@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#111" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="manifest" href="./mainfest.webmanifest" />
 		<!-- Primary Meta Tags -->
 		<title>Record Book</title>
 		<meta name="title" content="Record Book" />
@@ -42,7 +43,7 @@
 	<body class="center us">
 		<!-- <button class="btn-sign-out">SignOut</button> -->
 		<div class="header center">
-			<div class="header-inner center">
+			<div class="header-inner v-center sbtw-center">
 				<div class="logo-section center">
 					<img
 						src="./src/assets/images/fav.svg"
@@ -50,7 +51,23 @@
 						height=""
 						alt="Image"
 					/>
-					<h1>Calculator</h1>
+					<h1 class="greet-text">Record Book</h1>
+				</div>
+				<div class="button-area">
+					<img
+						class="user-icon-viewer"
+						src="https://avatars.dicebear.com/api/initials/@.svg"
+						width=""
+						height=""
+						alt="Img"
+					/>
+					<div class="profile-pop">
+						<ul>
+							<a href="./viewer.html"> <li>My records</li></a>
+							<li class="visible-false">New item</li>
+							<li class="log-out-btn">Logout</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -235,6 +252,20 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		async function initSW() {
+			if ("serviceWorker" in navigator) {
+				try {
+					await navigator.serviceWorker.register(
+						"./src/js/service-worker.js"
+					);
+				} catch (e) {
+					console.log(`SW registration failed`);
+				}
+			}
+		}
+		initSW();
+	</script>
 
 	<script src="./dist/main.js"></script>
 </html>

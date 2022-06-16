@@ -101,4 +101,18 @@
 	.app-main {
 		padding: 5px;
 	}
+
+	.profile-pop {
+		width: 100%;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		padding: 25px 0;
+	}
+
+	.profile-pop ul li {
+		padding: 10px 50px;
+	}
 }

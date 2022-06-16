@@ -56,6 +56,10 @@ const components = {
 		recordLane: $(".record-lane"),
 		userIcon: $(".user-icon-viewer"),
 	},
+	settings: {
+		logOutBtn: $(".log-out-btn"),
+		greetText: $(".greet-text"),
+	},
 };
 
 export default components;
